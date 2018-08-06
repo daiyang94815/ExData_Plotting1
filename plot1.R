@@ -10,7 +10,7 @@ power <- read_delim("household_power_consumption.txt", ";", na = "?", col_types 
   filter(Date %in% c("1/2/2007","2/2/2007")) %>%
   mutate(Date = dmy(Date))
 
-png("plot1.png")
+png("plot1.png", bg = "transparent")
 hist(power$Global_active_power, 
      col = "red",
      main = "Global Active Power",

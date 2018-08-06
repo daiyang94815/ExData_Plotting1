@@ -16,7 +16,7 @@ power <- read_delim("household_power_consumption.txt", ";", na = "?", col_types 
                                    minute(Time),
                                    second(Time)))
 
-png("plot2.png")
+png("plot2.png", bg = "transparent")
 with(power, plot(Date_Time, Global_active_power,
                 type = "l", xlab = "",
                 ylab = "Global Active Power (kilowatts)"))

@@ -16,7 +16,7 @@ power <- read_delim("household_power_consumption.txt", ";", na = "?", col_types 
                                    minute(Time),
                                    second(Time)))
 
-png("plot3.png")
+png("plot3.png", bg = "transparent")
 with(power, plot(Date_Time, Sub_metering_1,
                 type = "n", xlab = "",
                 ylab = "Energy sub metering"))
